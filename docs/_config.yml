@@ -2,8 +2,8 @@ title: Kodo ShelfBot
 description: Autonomous Warehouse AMR + Manipulator System
 theme: jekyll-theme-cayman
 
-baseurl: ""
-url: "https://kodorobotics.com/kodoshelfbot"
+baseurl: "/kodoshelfbot"
+url: "https://kodorobotics.com"
 
 markdown: kramdown
 

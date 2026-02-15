@@ -24,4 +24,4 @@ This project explores full-stack warehouse robotics:
 - Simulation in Gazebo
 - Integrated task planning
 
-[Read the Blog Posts →](/)
+[Read the Blog Posts →](/kodoshelfbot/)
