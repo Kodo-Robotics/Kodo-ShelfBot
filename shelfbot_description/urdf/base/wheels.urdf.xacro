@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="a200_drivetrain_wheels">
+    <xacro:include filename="$(find shelfbot_description)/urdf/base/indoor.urdf.xacro" />
+
+    <!-- Front Wheels -->
+    <xacro:property name="front_wheel_radius" value="${a200_indoor_wheel_radius}" scope="parent"/>
+    <xacro:property name="front_wheel_width" value="${a200_indoor_wheel_width}" scope="parent"/>
+
+    <!-- Wheel -->
+    <xacro:a200_indoor_wheel prefix="front_left">
+      <origin xyz="${wheel_base/2} ${wheel_track/2} 0" rpy="0 0 0"/>
+    </xacro:a200_indoor_wheel>
+
+    <!-- Wheel -->
+    <xacro:a200_indoor_wheel prefix="front_right">
+      <origin xyz="${wheel_base/2} ${-wheel_track/2} 0" rpy="0 0 0"/>
+    </xacro:a200_indoor_wheel>
+
+    <!-- Rear Wheels -->
+    <xacro:property name="rear_wheel_radius" value="${a200_indoor_wheel_radius}" scope="parent"/>
+    <xacro:property name="rear_wheel_width" value="${a200_indoor_wheel_width}" scope="parent"/>
+
+    <!-- Wheel -->
+    <xacro:a200_indoor_wheel prefix="rear_left">
+      <origin xyz="${-wheel_base/2} ${wheel_track/2} 0" rpy="0 0 0"/>
+    </xacro:a200_indoor_wheel>
+
+    <!-- Wheel -->
+    <xacro:a200_indoor_wheel prefix="rear_right">
+      <origin xyz="${-wheel_base/2} ${-wheel_track/2} 0" rpy="0 0 0"/>
+    </xacro:a200_indoor_wheel>
+  </xacro:macro>
+</robot>
